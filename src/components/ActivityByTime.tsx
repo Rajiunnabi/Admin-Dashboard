@@ -1,20 +1,18 @@
-
-
 import SingleActivity from "./SingleActivity";
-import { FaClock } from "react-icons/fa6";
-import { FaCalendarDay } from "react-icons/fa6";
-import { FaCalendarDays } from "react-icons/fa6";
-import { FaCalendarWeek } from "react-icons/fa6";
-import { FaCalendar } from "react-icons/fa6";
-import { FaAsterisk } from "react-icons/fa6";
+import { FaClock, FaCalendarDay, FaCalendarDays, FaCalendarWeek, FaCalendar, FaAsterisk } from "react-icons/fa6";
 
 const ActivityByTime = () => {
   return (
     <div>
-      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7  max-[440px]:text-left">
+      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-[440px]:text-center">
         Activity by Time
       </h4>
-      <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
+      <div className="w-full flex flex-col gap-y-4 
+                      max-[440px]:grid 
+                      max-[440px]:grid-cols-2 
+                      max-[440px]:place-items-center 
+                      max-[390px]:grid-cols-1">
+
         <SingleActivity
           mainTitle="Hour"
           totalVisitors="200"
@@ -23,6 +21,7 @@ const ActivityByTime = () => {
         >
           <FaClock className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Daily"
           totalVisitors="1,200"
@@ -31,6 +30,7 @@ const ActivityByTime = () => {
         >
           <FaCalendarDay className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Weekly"
           totalVisitors="8,400"
@@ -39,6 +39,7 @@ const ActivityByTime = () => {
         >
           <FaCalendarWeek className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Monthly"
           totalVisitors="32,000"
@@ -47,6 +48,7 @@ const ActivityByTime = () => {
         >
           <FaCalendarDays className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Yearly"
           totalVisitors="384,000"
@@ -55,6 +57,7 @@ const ActivityByTime = () => {
         >
           <FaCalendar className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Lifetime"
           totalVisitors="2,384,000"
@@ -63,8 +66,10 @@ const ActivityByTime = () => {
         >
           <FaAsterisk className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
       </div>
     </div>
   );
 };
+
 export default ActivityByTime;

@@ -1,14 +1,17 @@
-
-
 import SingleActivity from "./SingleActivity";
 
 const ActivitiesByCountry = () => {
   return (
     <div>
-      <h4 className="text-2xl text-whiteSecondary font-bold mb-7 max-[440px]:text-left">
+      <h4 className="text-2xl text-whiteSecondary font-bold mb-7 max-[440px]:text-center">
         Activity by country
       </h4>
-      <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
+      <div className="w-full flex flex-col gap-y-4 
+                      max-[440px]:grid 
+                      max-[440px]:grid-cols-2 
+                      max-[440px]:place-items-center 
+                      max-[390px]:grid-cols-1">
+        
         <SingleActivity
           mainTitle="United States"
           totalVisitors="5,200"
@@ -17,6 +20,7 @@ const ActivitiesByCountry = () => {
         >
           <img src="/assets/united-states.png" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="United Kingdom"
           totalVisitors="3,100"
@@ -25,6 +29,7 @@ const ActivitiesByCountry = () => {
         >
           <img src="/assets/united-kingdom.png" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="China"
           totalVisitors="13,800"
@@ -33,6 +38,7 @@ const ActivitiesByCountry = () => {
         >
           <img src="/assets/china.png" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Canada"
           totalVisitors="3,700"
@@ -41,6 +47,7 @@ const ActivitiesByCountry = () => {
         >
           <img src="/assets/canada.png" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Germany"
           totalVisitors="8,100"
@@ -49,6 +56,7 @@ const ActivitiesByCountry = () => {
         >
           <img src="/assets/germany.png" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="France"
           totalVisitors="900"
@@ -61,4 +69,5 @@ const ActivitiesByCountry = () => {
     </div>
   );
 };
+
 export default ActivitiesByCountry;

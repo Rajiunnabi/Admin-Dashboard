@@ -1,19 +1,18 @@
-
-
 import SingleActivity from "./SingleActivity";
-import { FaFacebook } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaPinterest } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaXTwitter, FaPinterest, FaYoutube } from "react-icons/fa6";
 
 const ConversionRateBySource = () => {
   return (
     <div>
-      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-[440px]:text-left">
+      <h4 className="text-2xl dark:text-whiteSecondary text-blackPrimary font-bold mb-7 max-[440px]:text-center">
         Conversion rate by source
       </h4>
-      <div className="w-full flex flex-col gap-y-4 max-[440px]:grid max-[440px]:grid-cols-2 max-[390px]:grid-cols-1">
+      <div className="w-full flex flex-col gap-y-4 
+                      max-[440px]:grid 
+                      max-[440px]:grid-cols-2 
+                      max-[440px]:place-items-center 
+                      max-[390px]:grid-cols-1">
+        
         <SingleActivity
           mainTitle="SEO"
           totalVisitors="2500"
@@ -24,6 +23,7 @@ const ConversionRateBySource = () => {
             SEO
           </span>
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Facebook"
           totalVisitors="1,200"
@@ -32,6 +32,7 @@ const ConversionRateBySource = () => {
         >
           <FaFacebook className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Instagram"
           totalVisitors="8,400"
@@ -40,6 +41,7 @@ const ConversionRateBySource = () => {
         >
           <FaInstagram className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Twitter"
           totalVisitors="32,000"
@@ -48,6 +50,7 @@ const ConversionRateBySource = () => {
         >
           <FaXTwitter className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="Pinterest"
           totalVisitors="384,000"
@@ -56,6 +59,7 @@ const ConversionRateBySource = () => {
         >
           <FaPinterest className="dark:text-blackPrimary text-whiteSecondary text-3xl" />
         </SingleActivity>
+
         <SingleActivity
           mainTitle="YouTube"
           totalVisitors="2,384,000"
@@ -68,4 +72,5 @@ const ConversionRateBySource = () => {
     </div>
   );
 };
+
 export default ConversionRateBySource;
