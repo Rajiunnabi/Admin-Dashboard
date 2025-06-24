@@ -3,7 +3,7 @@
 
 <h2>Admin dashboard design</h2>
   
-<p><b>Admin dashboard design</b> is designed in Figma by following foundational and best practices for e-commerce dashboard UI design. My goal is to create it as simple as possible and with a premium user interface. The complete design is created with the end user in mind.
+<p><b>Admin dashboard</b> is designed in Figma by following foundational and best practices for e-commerce dashboard UI design. My goal is to create it as simple as possible and with a premium user interface. The complete design is created with the end user in mind.
 
 <h3>Features</h3>
 <ul>
